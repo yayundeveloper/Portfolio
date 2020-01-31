@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>xuebing_home</title>
+    <title>yayun.s_home</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <ul class="nav nav-pills pull-right">
           <li role="presentation" class="active"><a href="#">Home</a></li>
-          <li role="presentation"><a href="../blog/">Features</a></li>
+          <li role="presentation"><a href="../blog/">Blogs</a></li>
           <li role="presentation"><a href="../contact/">Contact</a></li>
         </ul>
       </nav>
@@ -42,9 +42,9 @@
         <div class="col-md-5 p-lg-5 mx-auto my-5">
             <br>
             <br>
-          <h1 class="display-4 font-weight-normal" style="color:black">Punny headline</h1>
-          <p class="lead font-weight-normal" style="color:black">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
-          <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+          <h1 class="display-4 font-weight-normal" style="color:black">隋雅筠的个人站点</h1>
+          <p class="lead font-weight-normal" style="color:black"> 关注以Django框架为基础的小型项目 </p>
+          <a class="btn btn-outline-secondary" href="../blog/">技术写作</a>
         </div>
       </div>
 
@@ -52,9 +52,8 @@
         <div class="my-3 p-3">
             <br>
             <br>
-            <img src="/Portfolio/media/images/django0.jpg" width="170" alt="" class="img-thumbnail">
-            <img src="/Portfolio/media/images/bootstrap.png" width="260" class="img-thumbnail">
-            <img src="/Portfolio/media/images/bigdata.jpg" width="150" alt="" class="img-thumbnail">
+            <img src="../media/images/django0.jpg" width="170" alt="" class="img-thumbnail">
+            <img src="../media/images/bootstrap.png" width="260" class="img-thumbnail">
         </div>
         </div>
   </div>
@@ -66,10 +65,10 @@
     <div class="col-md-5 p-lg-5 mx-auto my-5">
             <br>
             <br>
-          <h2 class="p-banner__title">Project story</h2>
-          <p class="t-xxl t-bold p-banner__heading"><span>Migrating terabytes of retail data to the cloud with no disruption</span></p>
+          <h2 class="p-banner__title">办公用品库存管理</h2>
+          <p class="t-xxl t-bold p-banner__heading"><span> 数据管理基于Django框架，前端基于Bootstrap，界面清晰实用。 </span></p>
             <br>
-        <img class="p-banner__logo p-banner__logo--landscape" src="/Portfolio/media/images/github0.jpg" width="240" alt="" />
+            <img src="../media/images/inventory01.png" width="350" alt="" class="img-thumbnail">
         </div>
       </div>
     </div>
@@ -84,11 +83,9 @@
     <div class="col-md-5 p-lg-5 mx-auto my-5">
         <br>
         <br>
-        <br>
-        <br>
-        <br>
-        <h2 class="p-banner__title">Product story</h2>
-        <p class="t-xxl t-bold p-banner__heading"><span> Pictures that tell a thousand words </span></p>
+        <h2 class="p-banner__title">技术写作博客</h2>
+        <p class="t-xxl t-bold p-banner__heading"><span> 详细解释对Django项目的具体理解 </span></p>
+        <img src="../media/images/django0.jpg" width="170" alt="" class="img-thumbnail">
         </p>
       </div>
     </div>
@@ -97,23 +94,6 @@
     </div>
 </a>
 </section>
-
-  <div class="album py-5 bg-light">
-    <div class="container">
-        <div class="row">
-          {% for gallery in firstgallery.all %}
-            <div class="col-md-4">
-                <div class="card mb-4 shadow-sm">
-                     <img class="card-img-top" src="{{ gallery.image.url }}">
-                     <p class="card-text">{{ gallery.description }}</p>
-                    <div class="card-body">
-                    </div>
-                </div>
-              </div>
-          {% endfor %}
-      </div>
-    </div>
-  </div>
 
 </main>
 

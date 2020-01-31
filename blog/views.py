@@ -7,4 +7,4 @@ def blog_page(request):
 
 def blog_text(request,blog_pk):
     blog = get_object_or_404(Blog, pk=blog_pk)
-    return render(request, 'blog_text.html', {'blog':blog})
+    return render(request, 'blog_text.html', {'blog': blog})

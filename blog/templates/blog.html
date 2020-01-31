@@ -6,6 +6,7 @@
     word-wrap: break-word;
   }
   </style>
+    {% load static %}
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +15,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>xuebing_blog</title>
+    <title>yayun.s_blog</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -32,7 +33,7 @@
       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <ul class="nav nav-pills pull-right">
           <li role="presentation"><a href="../">Home</a></li>
-          <li role="presentation" class="active"><a href="#">Features</a></li>
+          <li role="presentation" class="active"><a href="#">Blogs</a></li>
           <li role="presentation"><a href="../contact/">Contact</a></li>
         </ul>
       </nav>
@@ -46,10 +47,10 @@
       <br>
       <br>
       <br>
-      <h1 class="jumbotron-heading">雪饼博客</h1>
-      <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+      <h1 class="jumbotron-heading">技术写作</h1>
+      <p class="lead text-muted">自学一年Python编程，已经做完两个以Django框架为基础的小型项目，期望找到Django开发相关的工作。GitHub https://github.com/yayundeveloper 个人网站 https://www..cn</p>
       <p>
-        <a href=".." class="btn btn-primary my-2">回到主页</a>
+        <a href="{% static 'example.pdf' %}" class="btn btn-primary my-2">下载简历</a>
       </p>
     </div>
   </section>
@@ -60,12 +61,11 @@
         <br>
         <img src="{{ blog.image.url }}" height=200 >
         <br>
-        {{ blog.image.url }}
-        <br>
         <pre sytle="width:750px">{{ blog.short_text }}</pre>
         <br>
         {% endfor %}
     </div>
+  </body>
 
 <footer class="text-muted">
   <div class="container">
